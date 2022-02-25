@@ -8,10 +8,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoolcalcMJ8Component } from './pages/coolcalc-mj8/coolcalc-mj8.component';
 import { ReportCoolcalcMJ8Component } from './pages/report-coolcalc-mj8/report-coolcalc-mj8.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './shared/header/header.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { SidebarComponent } from './shared/sidebar/sidebar.component';
     CoolcalcMJ8Component,
     ReportCoolcalcMJ8Component,
     HeaderComponent,
-    SidebarComponent
+    SidebarComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

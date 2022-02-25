@@ -16,8 +16,6 @@
 
   <link href="./assets/css/style.css" rel="stylesheet">
 
-  <!-- You can change the theme colors from here -->
-  <link id="theme" rel="stylesheet">
 
 <!-- ============================================================== -->
 <!-- Coolcalc -->
@@ -41,12 +39,12 @@
   <!-- Bootstrap 4 CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
 
-  <!--- CoolCalc REST UI styles (personaliza os colores para el usuario)-->
+  <!--- CoolCalc REST UI styles -->
   <link rel="stylesheet" href="https://cdn.coolcalc.com/css/mj8/v-bootstrap/staging/restui.css">
 
+  <!--- Local CoolCalc styles. -->
+  <link rel="stylesheet" href="./assets/coolcalc/coolcalc.css">
 
-  <!--- Additional CoolCalc styles for printable MJ8 report. (verificar si esta bien aqui)-->
-  <link rel="stylesheet" href="https://cdn.coolcalc.com/css/mj8/v-bootstrap/staging/print.css">
 
 <!-- ============================================================== -->
 <!-- End Coolcalc -->
@@ -55,7 +53,7 @@
 
 
 </head>
-<body class="mat-typography">
+<body class="">
 
   <!-- ============================================================== -->
   <!-- Preloader - style you can find in spinners.css -->
@@ -100,7 +98,7 @@
   <!-- ============================================================== -->
 
     <!--- Google maps library. --> 
-    <script src="https://maps.googleapis.com/maps/api/js?key="></script>
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=YOUR-API-KEY"></script>
 
     <!--- Google charts library. -->
     <script src="https://www.gstatic.com/charts/loader.js"></script>
@@ -134,9 +132,9 @@
     <!--- Khipu callbacks, these may be framework dependent so we separate them from the main JavaScript library. -->
     <script src="https://cdn.coolcalc.com/khipu-callbacks/mj8/v-bootstrap/staging/khipu-callbacks.js"></script>
 
-    <!--- Local JavaScript to initialize the CoolCalc application. (ver que hacen estos 2 archivos)-->
-    <script type="text/javascript" src="./assets/coolcalc/javascript/libmj8.js" ></script>
-    <script type="text/javascript" src="./assets/coolcalc/javascript/fun-factory.js" ></script>
+    <!--- Local JavaScript to initialize the CoolCalc application. -->
+    <script type="module" src="./assets/coolcalc/javascript/libmj8.js" ></script>
+    <script type="module" src="./assets/coolcalc/javascript/fun-factory.js" ></script>
 
   <!-- ============================================================== -->
   <!-- End Coolcalc -->

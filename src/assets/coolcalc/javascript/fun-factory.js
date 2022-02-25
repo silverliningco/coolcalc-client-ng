@@ -50,7 +50,7 @@
 myFunFactory.CSRFHandler = function() {
     return function(xhr) {
         // This is just boilerplate code.  Implement retrieving the token value and actual header name as required for your application.
-        myTokenValue = "";
+        var myTokenValue = "";
         xhr.setRequestHeader("X-CSRF-Token", myTokenValue);
     }
 }

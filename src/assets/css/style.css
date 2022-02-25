@@ -60,7 +60,6 @@
  h4,
  h5,
  h6 {
-   color: #455a64;
    font-family: "Montserrat", sans-serif;
    font-weight: 400; }
  
@@ -1844,12 +1843,6 @@
  .btn {
    padding: 7px 12px;
    cursor: pointer; }
- 
- .btn-group label {
-   color: #ffffff !important;
-   margin-bottom: 0px; }
-   .btn-group label.btn-secondary {
-     color: #67757c !important; }
  
  .btn-lg {
    padding: .75rem 1.5rem;
