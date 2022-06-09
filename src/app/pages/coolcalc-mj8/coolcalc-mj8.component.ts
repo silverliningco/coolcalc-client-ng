@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, NgZone, OnInit } from '@angular/core';
 
 // export variables
 import  { libMJ8 } from  '../../../assets/coolcalc/javascript/libmj8.js';
@@ -12,12 +12,13 @@ import { myFunFactory } from '../../../assets/coolcalc/javascript/fun-factory.js
 })
 export class CoolcalcMJ8Component implements OnInit {
 
-  constructor() { }
+  constructor( private ngZone: NgZone) { }
 
   ngOnInit(): void {
-
-    //initializing CooCalc
-    libMJ8.landingPage(myFunFactory); 
-  }
+    this.ngZone.runOutsideAngular(() => {  
+      //initializing CooCalc
+      libMJ8.landingPage(myFunFactory); 
+    });
+  } 
 
 }
